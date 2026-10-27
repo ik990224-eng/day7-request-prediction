@@ -1,6 +1,6 @@
 ﻿# GitHub에 학습 과정을 기록하는 방법
 
-이 프로젝트의 저장소는 https://github.com/ik990224-eng/day7-request-prediction 입니다. 비공개 저장소는 소유 계정으로 로그인해야 열 수 있습니다.
+이 프로젝트의 저장소는 https://github.com/ik990224-eng/day7-request-prediction 입니다. 포트폴리오용 공개 저장소이므로 로그인 없이 코드·설명·결과를 열람할 수 있습니다.
 
 ## 이미 만들어진 저장소에서 이어서 학습하기
 

@@ -1,0 +1,10 @@
+{
+  "name": "TreeGrid",
+  "best_params": {
+    "model__max_depth": 4,
+    "model__min_samples_leaf": 1
+  },
+  "best_CV_F1": 0.7187301587301588,
+  "basic_table_replaced": false,
+  "test_evaluated": false
+}

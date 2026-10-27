@@ -1,0 +1,21 @@
+# 로컬 환경·캐시·인증정보
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.pem
+*.key
+
+# 모델은 main.py에서 재생성. 직접 만든 파일만 복원합니다.
+*.joblib
+*.pkl
+*.pickle
+
+# 편집기·운영체제 임시 파일
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

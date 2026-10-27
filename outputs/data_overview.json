@@ -1,0 +1,75 @@
+{
+  "purpose": "요청 실행 전 실패 여부와 실행시간을 예측하는 교육용 실험",
+  "source": "교육용 합성 100건, 실제 서비스 기록 아님",
+  "features": [
+    "input_chars",
+    "allowed_tools",
+    "task_type",
+    "priority"
+  ],
+  "targets": {
+    "classification": "failed: 0 성공 / 1 실패",
+    "regression": "elapsed_ms: 실행시간(ms)"
+  },
+  "excluded_features": [
+    "request_id",
+    "failed",
+    "elapsed_ms",
+    "status",
+    "retry_count"
+  ],
+  "train": {
+    "rows": 60,
+    "class_counts": {
+      "0": 42,
+      "1": 18
+    },
+    "missing_by_feature": {
+      "input_chars": 5,
+      "allowed_tools": 3,
+      "task_type": 2,
+      "priority": 2
+    },
+    "runtime_ms": {
+      "count": 60.0,
+      "mean": 1235.15,
+      "std": 599.4385176485391,
+      "min": 108.0,
+      "25%": 797.0,
+      "50%": 1208.5,
+      "75%": 1754.75,
+      "max": 2399.0
+    }
+  },
+  "valid": {
+    "rows": 20,
+    "class_counts": {
+      "0": 14,
+      "1": 6
+    },
+    "missing_by_feature": {
+      "input_chars": 1,
+      "allowed_tools": 0,
+      "task_type": 0,
+      "priority": 0
+    }
+  },
+  "heldout_test_id_count": 20,
+  "test_evaluated": false,
+  "example_R001": {
+    "split": "valid",
+    "inputs": {
+      "input_chars": 1549.0,
+      "allowed_tools": 4.0,
+      "task_type": "summary",
+      "priority": "normal"
+    },
+    "actual_failed": 1,
+    "actual_elapsed_ms": 1994.0
+  },
+  "data_sha256": {
+    "requests.csv": "d67ff13153a36ef4c06ba739bda9ca1b68154d418a4142c52c688fc7181e9128",
+    "split_manifest.csv": "6f16a0aa99ade4c5d3239c7d174ccd559ff7f3ca74c0d192f3ae4d21741abf57",
+    "split_order.csv": "6fac172c5eda40b4d45a19f0088bccd700f86b2728945a3f0ee11f51583dabe1"
+  }
+}

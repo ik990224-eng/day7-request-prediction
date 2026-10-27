@@ -1,0 +1,409 @@
+{
+  "status": "passed",
+  "audit_version": 1,
+  "output": "outputs",
+  "data_dir": "data",
+  "training_performed": false,
+  "expected_outputs_used": false,
+  "row_counts": {
+    "classification_comparison.csv": 6,
+    "regression_comparison.csv": 6,
+    "cv_scores.csv": 60,
+    "validation_predictions.csv": 240,
+    "fold_manifest.csv": 600,
+    "feature_importance.csv": 12,
+    "separate_tree_grid.csv": 4
+  },
+  "prediction_checks": [
+    {
+      "task": "classification",
+      "model": "Dummy",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "F1": 0.0,
+        "FP": 0,
+        "FN": 6
+      }
+    },
+    {
+      "task": "classification",
+      "model": "Logistic",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "F1": 0.3333333333333333,
+        "FP": 4,
+        "FN": 4
+      }
+    },
+    {
+      "task": "classification",
+      "model": "KNN3",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "F1": 0.5454545454545454,
+        "FP": 2,
+        "FN": 3
+      }
+    },
+    {
+      "task": "classification",
+      "model": "Tree",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "F1": 0.3333333333333333,
+        "FP": 4,
+        "FN": 4
+      }
+    },
+    {
+      "task": "classification",
+      "model": "Forest",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "F1": 0.2222222222222222,
+        "FP": 2,
+        "FN": 5
+      }
+    },
+    {
+      "task": "classification",
+      "model": "XGB",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "F1": 0.2,
+        "FP": 3,
+        "FN": 5
+      }
+    },
+    {
+      "task": "regression",
+      "model": "Dummy",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "MAE_ms": 541.26,
+        "RMSE_ms": 658.7450094687625
+      }
+    },
+    {
+      "task": "regression",
+      "model": "Linear",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "MAE_ms": 551.7974189024304,
+        "RMSE_ms": 639.9963229941538
+      }
+    },
+    {
+      "task": "regression",
+      "model": "KNN15",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "MAE_ms": 530.0633333333333,
+        "RMSE_ms": 641.7875780453633
+      }
+    },
+    {
+      "task": "regression",
+      "model": "Tree",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "MAE_ms": 632.0278571428572,
+        "RMSE_ms": 719.0008176672142
+      }
+    },
+    {
+      "task": "regression",
+      "model": "Forest",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "MAE_ms": 600.3373281465331,
+        "RMSE_ms": 690.3678283708908
+      }
+    },
+    {
+      "task": "regression",
+      "model": "XGB",
+      "rows": 20,
+      "valid_ids_and_targets_in_order": true,
+      "recalculated_metrics": {
+        "MAE_ms": 610.1968444824219,
+        "RMSE_ms": 700.4096018306317
+      }
+    }
+  ],
+  "cv_checks": [
+    {
+      "task": "classification",
+      "model": "Dummy",
+      "folds": 5,
+      "mean": 0.0,
+      "std_ddof0": 0.0,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "classification",
+      "model": "Logistic",
+      "folds": 5,
+      "mean": 0.5219047619047619,
+      "std_ddof0": 0.2092118890323197,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "classification",
+      "model": "KNN3",
+      "folds": 5,
+      "mean": 0.33555555555555555,
+      "std_ddof0": 0.17643940658914853,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "classification",
+      "model": "Tree",
+      "folds": 5,
+      "mean": 0.5424242424242424,
+      "std_ddof0": 0.12361259426891598,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "classification",
+      "model": "Forest",
+      "folds": 5,
+      "mean": 0.27999999999999997,
+      "std_ddof0": 0.25438378704451886,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "classification",
+      "model": "XGB",
+      "folds": 5,
+      "mean": 0.5466666666666666,
+      "std_ddof0": 0.10456258094238745,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "regression",
+      "model": "Dummy",
+      "folds": 5,
+      "mean": 606.1841022010876,
+      "std_ddof0": 100.84377030582887,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "regression",
+      "model": "Linear",
+      "folds": 5,
+      "mean": 639.8318041171046,
+      "std_ddof0": 57.72086758120546,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "regression",
+      "model": "KNN15",
+      "folds": 5,
+      "mean": 598.8500265277335,
+      "std_ddof0": 91.21319362184303,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "regression",
+      "model": "Tree",
+      "folds": 5,
+      "mean": 599.6347469954223,
+      "std_ddof0": 96.1163873314032,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "regression",
+      "model": "Forest",
+      "folds": 5,
+      "mean": 624.0108674649905,
+      "std_ddof0": 96.97449175032274,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    },
+    {
+      "task": "regression",
+      "model": "XGB",
+      "folds": 5,
+      "mean": 650.8915778505686,
+      "std_ddof0": 92.29534779599383,
+      "fit_n": 48,
+      "eval_n": 12,
+      "median_audit_passed": true
+    }
+  ],
+  "choices_by_recalculated_CV": {
+    "classification": "XGB",
+    "regression": "KNN15"
+  },
+  "summary_choices_match": true,
+  "fold_checks": [
+    {
+      "task": "classification",
+      "fold": 1,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "classification",
+      "fold": 2,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "classification",
+      "fold": 3,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "classification",
+      "fold": 4,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "classification",
+      "fold": 5,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "regression",
+      "fold": 1,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "regression",
+      "fold": 2,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "regression",
+      "fold": 3,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "regression",
+      "fold": 4,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    },
+    {
+      "task": "regression",
+      "fold": 5,
+      "fit_n": 48,
+      "eval_n": 12,
+      "disjoint": true,
+      "train_only": true,
+      "matches_declared_fold": true
+    }
+  ],
+  "fold_evaluate_once_fit_four_times_per_train_id": true,
+  "importance_checks": {
+    "MDI_rows": 8,
+    "permutation_rows": 4,
+    "metadata_and_ranges_valid": true
+  },
+  "separate_tree_grid_checks": {
+    "rows": 4,
+    "predeclared_parameters_match": true,
+    "best_params_match": true,
+    "basic_table_replaced": false
+  },
+  "loader_boundary_checks": {
+    "duplicate_split_manifest_rejected": true,
+    "duplicate_error": "분할표 ID 중복: 두 분할에 같은 요청을 넣을 수 없습니다.",
+    "poisoned_test_rows": 20,
+    "poisoned_columns": [
+      "input_chars",
+      "allowed_tools",
+      "task_type",
+      "priority",
+      "failed",
+      "elapsed_ms"
+    ],
+    "train_valid_inputs_and_both_targets_unchanged": true,
+    "test_inputs_and_targets_not_returned": true,
+    "original_data_hashes_unchanged": true,
+    "temporary_copies_only": true
+  },
+  "data_sha256": {
+    "requests.csv": "d67ff13153a36ef4c06ba739bda9ca1b68154d418a4142c52c688fc7181e9128",
+    "split_manifest.csv": "6f16a0aa99ade4c5d3239c7d174ccd559ff7f3ca74c0d192f3ae4d21741abf57",
+    "split_order.csv": "6fac172c5eda40b4d45a19f0088bccd700f86b2728945a3f0ee11f51583dabe1"
+  },
+  "output_sha256": {
+    "classification_comparison.csv": "90e9061accfddf8ad24610357dfddba0840148457a82c6bc8a1ff5cab0faed17",
+    "regression_comparison.csv": "5823084e5116093779090dbb703e0373fc69617c7b6e94337eb8b77e6a240663",
+    "cv_scores.csv": "e5edab6cf35afb782c08b6fa6fa253edaf11a063bb4ea20bae9147c540e64703",
+    "validation_predictions.csv": "aced27c766ec2d9b6c8803ef5d047abd1e01fc287768326db6a07eb17302570c",
+    "fold_manifest.csv": "7bbb14bb54c08f7916f55e4a97c033456412e0769b2111361cab352c46a36987",
+    "feature_importance.csv": "1361c8f054c6b60547fed5f785532a6326633f3b589fcd9d88f544003c0053ae",
+    "separate_tree_grid.csv": "b5ebffc2ac60447782ba9dca8597283234b6309ea3a39255f1fcb8faa2948064",
+    "run_summary.json": "429c5005a7e0e46263e1d871fab82bd86a8817eaaf243f52cd3d5e929c3e4af6",
+    "separate_tree_grid.json": "7267f263b81ebcec400aeff254a9c20cad68f1926245955086c3ba7683b29d8a"
+  }
+}

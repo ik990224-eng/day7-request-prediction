@@ -1,0 +1,14 @@
+{
+  "description": "Day5/6와 동일한 수업용 합성100건",
+  "license_note": "교육용 생성 데이터; 실제 사용자·기업 정보 아님",
+  "sha256": {
+    "requests.csv": "d67ff13153a36ef4c06ba739bda9ca1b68154d418a4142c52c688fc7181e9128",
+    "split_manifest.csv": "6f16a0aa99ade4c5d3239c7d174ccd559ff7f3ca74c0d192f3ae4d21741abf57",
+    "split_order.csv": "6fac172c5eda40b4d45a19f0088bccd700f86b2728945a3f0ee11f51583dabe1"
+  },
+  "train": 60,
+  "valid": 20,
+  "heldout_test": 20,
+  "feature_count": 4,
+  "transformed_features": 8
+}

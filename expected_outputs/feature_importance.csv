@@ -1,0 +1,13 @@
+﻿feature,method,importance,repeat_std,evaluation_data,metric
+num__input_chars,MDI,0.5642561704363525,,train60,impurity_decrease
+num__allowed_tools,MDI,0.16695992834839143,,train60,impurity_decrease
+cat__task_type_qa,MDI,0.04682965690389289,,train60,impurity_decrease
+cat__task_type_research,MDI,0.04055336036469088,,train60,impurity_decrease
+cat__task_type_summary,MDI,0.042773957718423815,,train60,impurity_decrease
+cat__priority_high,MDI,0.039793770166542314,,train60,impurity_decrease
+cat__priority_low,MDI,0.045077508700060526,,train60,impurity_decrease
+cat__priority_normal,MDI,0.05375564736164577,,train60,impurity_decrease
+input_chars,permutation,0.06488095238095237,0.12266228625842426,valid20 (diagnostic),F1_drop
+allowed_tools,permutation,0.0478030303030303,0.12756082862097418,valid20 (diagnostic),F1_drop
+task_type,permutation,0.1396031746031746,0.1136359671538469,valid20 (diagnostic),F1_drop
+priority,permutation,-0.06194444444444445,0.14950819581977423,valid20 (diagnostic),F1_drop

@@ -1,0 +1,46 @@
+{
+  "level": 3,
+  "choices_by_CV": {
+    "classification": "XGB",
+    "regression": "KNN15"
+  },
+  "tie_rule": "정확한 동점이면 후보 선언 순서 우선",
+  "integrity": {
+    "train_n": 60,
+    "valid_n": 20,
+    "heldout_test_id_n": 20,
+    "disjoint": true
+  },
+  "boundary_checks": {
+    "unknown_category_shape": [
+      2,
+      8
+    ],
+    "statistics_unchanged": true,
+    "missing_column_blocked": true
+  },
+  "test_evaluated": false,
+  "selection_metric": {
+    "classification": "mean fold F1",
+    "regression": "mean fold RMSE"
+  },
+  "data_sha256": {
+    "requests.csv": "d67ff13153a36ef4c06ba739bda9ca1b68154d418a4142c52c688fc7181e9128",
+    "split_manifest.csv": "6f16a0aa99ade4c5d3239c7d174ccd559ff7f3ca74c0d192f3ae4d21741abf57",
+    "split_order.csv": "6fac172c5eda40b4d45a19f0088bccd700f86b2728945a3f0ee11f51583dabe1"
+  },
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "xgboost": "3.1.3"
+  },
+  "warnings": [
+    "CV는 모델 선택용이다. valid도 이전 실습부터 반복 진단했으므로 독립 최종 평가가 아니다.",
+    "중요도는 인과관계가 아니다. valid 중요도만으로 입력 특성을 자동 삭제하지 않는다."
+  ]
+}

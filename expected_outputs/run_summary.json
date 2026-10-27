@@ -1,0 +1,46 @@
+{
+  "level": 3,
+  "choices_by_CV": {
+    "classification": "Tree",
+    "regression": "KNN15"
+  },
+  "tie_rule": "候補宣言順 (完全同点時)",
+  "integrity": {
+    "train_n": 60,
+    "valid_n": 20,
+    "heldout_test_id_n": 20,
+    "disjoint": true
+  },
+  "boundary_checks": {
+    "unknown_category_shape": [
+      2,
+      8
+    ],
+    "statistics_unchanged": true,
+    "missing_column_blocked": true
+  },
+  "test_evaluated": false,
+  "selection_metric": {
+    "classification": "mean fold F1",
+    "regression": "mean fold RMSE"
+  },
+  "data_sha256": {
+    "requests.csv": "d67ff13153a36ef4c06ba739bda9ca1b68154d418a4142c52c688fc7181e9128",
+    "split_manifest.csv": "6f16a0aa99ade4c5d3239c7d174ccd559ff7f3ca74c0d192f3ae4d21741abf57",
+    "split_order.csv": "6fac172c5eda40b4d45a19f0088bccd700f86b2728945a3f0ee11f51583dabe1"
+  },
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "xgboost": "3.1.3"
+  },
+  "warnings": [
+    "CVは選択用。validも前日から反復診断され独立最終評価ではない。",
+    "重要度は因果関係ではない。validの重要度で特性を自動削除しない。"
+  ]
+}

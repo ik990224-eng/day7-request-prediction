@@ -1,0 +1,22 @@
+test_boundary (test_project.ProjectTests.test_boundary) ... ok
+test_candidate_freshness (test_project.ProjectTests.test_candidate_freshness) ... ok
+test_choice_ignores_valid (test_project.ProjectTests.test_choice_ignores_valid) ... ok
+test_cv (test_project.ProjectTests.test_cv) ... ok
+test_empty (test_project.ProjectTests.test_empty) ... ok
+test_exact_cv_ties_keep_declared_order (test_project.ProjectTests.test_exact_cv_ties_keep_declared_order) ... ok
+test_extra_column (test_project.ProjectTests.test_extra_column) ... ok
+test_feature_count (test_project.ProjectTests.test_feature_count) ... ok
+test_full_candidate_order_and_independent_preprocessing (test_project.ProjectTests.test_full_candidate_order_and_independent_preprocessing) ... ok
+test_medians (test_project.ProjectTests.test_medians) ... ok
+test_near_cv_scores_are_not_ties (test_project.ProjectTests.test_near_cv_scores_are_not_ties) ... ok
+test_no_test_returned (test_project.ProjectTests.test_no_test_returned) ... ok
+test_regression_candidate_cv_matches_independent_fold (test_project.ProjectTests.test_regression_candidate_cv_matches_independent_fold) ... ok
+test_regression_choice_minimizes_cv_and_ignores_valid (test_project.ProjectTests.test_regression_choice_minimizes_cv_and_ignores_valid) ... ok
+test_split (test_project.ProjectTests.test_split) ... ok
+test_statistics (test_project.ProjectTests.test_statistics) ... ok
+test_training_missing_column (test_project.ProjectTests.test_training_missing_column) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.215s
+
+OK
